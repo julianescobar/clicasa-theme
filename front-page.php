@@ -9,9 +9,7 @@ get_header();
 ?>
 
 <main class="home">
-  <section class="hero">
-    <h1>CliCasa</h1>    
-  </section>
+    <?php get_template_part('partials/hero'); ?>    
 </main>
 
 <?php
