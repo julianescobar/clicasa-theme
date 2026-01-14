@@ -10,6 +10,7 @@ get_header();
 
 <main class="home">
     <?php get_template_part('partials/hero'); ?>    
+    <?php get_template_part('partials/section-advantages'); ?>    
 </main>
 
 <?php

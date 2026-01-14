@@ -2,6 +2,8 @@
     --color-primary: #008bcf;
     --greyish-brown: #4a4a4a;    
     --txt-color-gray1: #545454;
+    --txt-color-gray2: #9b9b9b;
+    --txt-subtitle:#0099d9;
     --white: #FFF;    
 }
 
@@ -10,6 +12,36 @@ body {
     margin: 0;
 }
 
+h2 {     
+  font-family: Lato;
+  font-size: 2.625rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;  
+  color: var(--txt-subtitle)
+}
+
+h3 {
+    font-size: 1.125rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;    
+    color: var(--color-primary);
+}
+
+p {
+    font-size: 1rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;    
+    color: var(--txt-color-gray2);
+}
 /* HEADER */
 .header__container {
   display: flex;
@@ -165,6 +197,7 @@ body {
     line-height: 1.44;
     display: block;
     margin: 0px auto;
+    color: var(--white);
 }
 
 .hero__search-input::-webkit-input-placeholder { font-weight: 300; } 
@@ -195,6 +228,58 @@ body {
   background-color: var(--color-primary);
 
 }
+
+/* SECTION ADVANTAGES */
+
+
+.advantages__container {
+    max-width: 1200px;  
+    padding: 1rem 0;  
+    margin: -4rem auto;
+    background: var(--white);
+}
+
+.advantages__header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.advantages__title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.advantages__subtitle {        
+    max-width: 30rem;
+    margin: 0px auto;
+    line-height: 1.44;
+}
+
+.advantages__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.advantages__item {
+  text-align: center;
+}
+
+.advantages__item-image {
+  max-width: 80px;
+  margin-bottom: 1rem;
+}
+
+
+
+
+
+@media (max-width: 1024px) {
+  .advantages__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 
 
 @media (max-width: 768px) {
@@ -256,4 +341,33 @@ body {
   .hero__search-button {
     width: 100%;
   }
+  /* ADVANTAGES */
+  .advantages__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .advantages {
+    padding: 0 15px;
+  }
+
+  .advantages__container {
+    margin: 0;
+  }
+
+  .advantages__item {
+    display: flex;
+  }
+      
+  .advantages__item-image {
+    width: 30%;
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+  }
+
+  .advantages__content {
+    text-align: left;
+    padding-left: 40px;
+  }
 }
+
