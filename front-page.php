@@ -15,6 +15,7 @@ get_header();
     <?php get_template_part('partials/section-conditions'); ?>    
     <?php get_template_part('partials/section-companies'); ?>  
     <?php get_template_part('partials/section-testimonials'); ?>  
+    <?php get_template_part('partials/section-search_offers'); ?>
 </main>
 
 <?php

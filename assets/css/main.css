@@ -214,7 +214,7 @@ body {
   margin-bottom: 3rem;
 }
 
-.advantages__title, .sell-easy__title, .conditions__title, .companies__title, .testimonials__title {  
+.advantages__title, .sell-easy__title, .conditions__title, .companies__title, .testimonials__title, .search_offers__title {  
   margin-bottom: 0.5rem;
   font-family: Lato;
   font-size: 2.625rem;
@@ -271,7 +271,7 @@ body {
 
 
 
-.sell-easy__container, .conditions__container, .companies__container, .testimonials__container{
+.sell-easy__container, .conditions__container, .companies__container, .testimonials__container, .search_offers__container{
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -362,21 +362,21 @@ body {
 }
 
 /* CONDITIONS */
-.conditions {
+.conditions, .search_offers {
   padding: 2rem 0;
   margin: -2rem auto 0rem;
   background-repeat: no-repeat;
   background-size: cover; 
   background-position: center bottom; 
 }
-.conditions__title {
+.conditions__title, .search_offers__title {
   color: var(--white);
 }
-.conditions__container, .companies__container{
+.conditions__container, .companies__container, .search_offers__container{
   text-align: center;
 }
 
-.conditions__button {
+.conditions__button, .search_offers__button {
     text-decoration: none;
     font-weight: 700;
     padding: 0.70rem 1.5rem;
@@ -387,7 +387,7 @@ body {
     display: block;
     width: max-content;
 }
-.conditions__subtitle {
+.conditions__subtitle ,.search_offers__subtitle {
   color: var(--white);
   max-width: 50rem;
   display: block;
@@ -497,6 +497,10 @@ body {
 
 /* e*/
 /* END */
+
+.search_offers {
+    margin: 3rem auto 0;
+}
 
 @media (min-width: 769px) {
     .testimonials__slider .slick-dots {
