@@ -231,11 +231,13 @@ p {
 
 /* SECTION ADVANTAGES */
 
-
+.advantages {
+    position: relative;
+}
 .advantages__container {
     max-width: 1200px;  
     padding: 1rem 0;  
-    margin: -4rem auto;
+    margin: -4rem auto 0rem;
     background: var(--white);
 }
 
@@ -244,12 +246,11 @@ p {
   margin-bottom: 3rem;
 }
 
-.advantages__title {
-  font-size: 2rem;
+.advantages__title {  
   margin-bottom: 0.5rem;
 }
 
-.advantages__subtitle {        
+.advantages__subtitle, .sell-easy__subtitle {        
     max-width: 30rem;
     margin: 0px auto;
     line-height: 1.44;
@@ -270,6 +271,99 @@ p {
   margin-bottom: 1rem;
 }
 
+/* SELL EASY*/
+
+.sell-easy {
+    padding: 7rem;
+    margin: -4rem auto 0rem;
+}
+
+
+
+.sell-easy__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sell-easy__header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.sell-easy__title {  
+  margin-bottom: 10px;
+}
+
+
+
+.sell-easy__content{
+    background: var(--white);
+    
+}
+
+.sell-easy__grid {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    position: relative;
+}
+
+.sell-easy__grid .sell-easy__item:first-child::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+    width: calc((100% - 40px) / 4 + 20px); 
+    border-bottom:  0.5rem solid var(--color-primary);
+}
+
+
+.sell-easy__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.sell-easy__step {
+  width: 2.625rem;
+  height: 2.625rem;
+  margin: 0.188rem 0.813rem 0.313rem 1.25rem;
+  background-color:var(--color-primary);
+  border-radius: 50%;
+  line-height: 1;
+  flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+     font-family: "Palatino Linotype", Palatino, "Book Antiqua", serif;
+       font-size: 1.875rem;
+}
+
+.sell-easy__content {
+  text-align: left;
+}
+
+.sell-easy__item-title {
+    margin-top: 0;
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+
+
+
+
+.sell-easy__image {  
+  text-align: center;
+}
+
+.sell-easy__image img {
+  max-width: 100%;
+  height: auto;
+}
+
 
 
 
@@ -280,7 +374,7 @@ p {
   }
 }
 
-
+/* MOBILE */
 
 @media (max-width: 768px) {
     /* HEADER */
@@ -342,7 +436,7 @@ p {
     width: 100%;
   }
   /* ADVANTAGES */
-  .advantages__grid {
+  .advantages__grid, .sell-easy__grid  {
     grid-template-columns: 1fr;
   }
 
@@ -352,6 +446,7 @@ p {
 
   .advantages__container {
     margin: 0;
+    
   }
 
   .advantages__item {
@@ -369,5 +464,12 @@ p {
     text-align: left;
     padding-left: 40px;
   }
+
+  /* SELL EASY*/
+  .sell-easy {
+    padding: 1rem 0;
+    margin: 2rem 0;
+  }
 }
 
+/* END MOBILE */
