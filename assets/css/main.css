@@ -214,7 +214,7 @@ body {
   margin-bottom: 3rem;
 }
 
-.advantages__title, .sell-easy__title, .conditions__title {  
+.advantages__title, .sell-easy__title, .conditions__title, .companies__title {  
   margin-bottom: 0.5rem;
   font-family: Lato;
   font-size: 2.625rem;
@@ -226,7 +226,7 @@ body {
   color: var(--txt-subtitle);
 }
 
-.advantages__subtitle, .sell-easy__subtitle{        
+.advantages__subtitle, .sell-easy__subtitle, .companies__subtitle{        
     max-width: 30rem;
     margin: 0px auto;
     line-height: 1.44;
@@ -271,7 +271,7 @@ body {
 
 
 
-.sell-easy__container, .conditions__container{
+.sell-easy__container, .conditions__container, .companies__container{
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -372,7 +372,7 @@ body {
 .conditions__title {
   color: var(--white);
 }
-.conditions__container{
+.conditions__container, .companies__container{
   text-align: center;
 }
 
@@ -392,6 +392,30 @@ body {
   max-width: 50rem;
   display: block;
   margin: 2rem auto;
+}
+
+/* SECTION COMPANIES */
+
+.companies {
+      padding: 2rem 0;
+}
+
+.companies__row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.companies__col {    
+  flex: 0 1 30%;
+  margin: 3rem 0;
+}
+
+.companies__logo {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 @media (max-width: 1024px) {
