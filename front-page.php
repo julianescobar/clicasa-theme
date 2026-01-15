@@ -14,6 +14,7 @@ get_header();
     <?php get_template_part('partials/section-sell-easy'); ?>    
     <?php get_template_part('partials/section-conditions'); ?>    
     <?php get_template_part('partials/section-companies'); ?>  
+    <?php get_template_part('partials/section-testimonials'); ?>  
 </main>
 
 <?php

@@ -214,7 +214,7 @@ body {
   margin-bottom: 3rem;
 }
 
-.advantages__title, .sell-easy__title, .conditions__title, .companies__title {  
+.advantages__title, .sell-easy__title, .conditions__title, .companies__title, .testimonials__title {  
   margin-bottom: 0.5rem;
   font-family: Lato;
   font-size: 2.625rem;
@@ -226,7 +226,7 @@ body {
   color: var(--txt-subtitle);
 }
 
-.advantages__subtitle, .sell-easy__subtitle, .companies__subtitle{        
+.advantages__subtitle, .sell-easy__subtitle, .companies__subtitle, .testimonials__subtitle{        
     max-width: 30rem;
     margin: 0px auto;
     line-height: 1.44;
@@ -244,7 +244,7 @@ body {
   gap: 2rem;
 }
 
-.advantages__item {
+.advantages__item, .testimonials__title, .testimonials__subtitle{
   text-align: center;
 }
 
@@ -271,7 +271,7 @@ body {
 
 
 
-.sell-easy__container, .conditions__container, .companies__container{
+.sell-easy__container, .conditions__container, .companies__container, .testimonials__container{
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -336,7 +336,7 @@ body {
   text-align: left;
 }
 
-.sell-easy__item-title, .advantages__item-title {
+.sell-easy__item-title, .advantages__item-title, .testimonials__text{
     margin-top: 0;
   font-size: 18px;
   margin-bottom: 4px;
@@ -417,6 +417,94 @@ body {
     height: auto;
     display: block;
 }
+
+/* SECTION TESTIMONIALS */
+
+.testimonials__slider {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+
+.testimonials__item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    text-align: center;
+    margin: 0 10px; 
+}
+
+
+.testimonials__img {
+    width: 100%;   
+    margin-bottom: 15px;
+}
+
+
+.testimonials__text {
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+    color: var(--color-primary);
+    font-style: italic;
+}
+
+
+.testimonials__name {
+    font-size: 0.875rem;
+    font-weight: normal;
+    font-stretch: normal;
+    color: var(--greyish-brown);
+
+
+}
+
+
+.testimonials__slider .slick-dots {
+    bottom: -30px; 
+}
+
+
+
+/* SLICK */
+
+.testimonials__slider .slick-dots li button:before {
+    font-size: 1px;  
+    color: #dedede; 
+    border: 2px solid #dedede;  
+    border-radius: 50%;      
+    opacity: 1;
+    background: #dedede;    
+}
+
+.testimonials__slider .slick-dots li button:before {
+  width: 10px;
+  height: 10px;
+}
+
+.testimonials__slider .slick-dots li.slick-active button:before {
+    color: var(--white);            
+    border-color: var(--color-primary);
+    background: var(--white);       
+}
+
+
+.testimonials__slider .slick-dots li button:hover:before {
+    color: var(--white);    
+    border-color: var(--color-primary); 
+}
+
+/* e*/
+/* END */
+
+@media (min-width: 769px) {
+    .testimonials__slider .slick-dots {
+        display: block; /* un solo dot externo */
+        text-align: center;
+    }
+}
+
 
 @media (max-width: 1024px) {
   .advantages__grid {
@@ -520,6 +608,16 @@ body {
     padding: 1rem 0;
     margin: 2rem 0;
   }
+
+  /* Testimonials */
+    .testimonials__slider .slick-slide {
+        margin: 0 auto;
+    }
+
+    .testimonials__text, .testimonials__name {
+      text-align: left;
+    }
+
 }
 
 /* END MOBILE */
