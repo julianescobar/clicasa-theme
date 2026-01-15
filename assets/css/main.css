@@ -12,36 +12,6 @@ body {
     margin: 0;
 }
 
-h2 {     
-  font-family: Lato;
-  font-size: 2.625rem;
-  font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;  
-  color: var(--txt-subtitle)
-}
-
-h3 {
-    font-size: 1.125rem;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;    
-    color: var(--color-primary);
-}
-
-p {
-    font-size: 1rem;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;    
-    color: var(--txt-color-gray2);
-}
 /* HEADER */
 .header__container {
   display: flex;
@@ -96,8 +66,6 @@ p {
     color: var(--txt-color-gray1);
     text-decoration: none;
 }
-
-
 
 /* HERO  */
 
@@ -246,14 +214,28 @@ p {
   margin-bottom: 3rem;
 }
 
-.advantages__title {  
+.advantages__title, .sell-easy__title, .conditions__title {  
   margin-bottom: 0.5rem;
+  font-family: Lato;
+  font-size: 2.625rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--txt-subtitle);
 }
 
-.advantages__subtitle, .sell-easy__subtitle {        
+.advantages__subtitle, .sell-easy__subtitle{        
     max-width: 30rem;
     margin: 0px auto;
     line-height: 1.44;
+    font-size: 1rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;    
+    letter-spacing: normal;
+    color: var(--txt-color-gray2);
 }
 
 .advantages__grid {
@@ -271,16 +253,25 @@ p {
   margin-bottom: 1rem;
 }
 
+.advantages__item-text, .sell-easy__item-text {
+  font-size: 1rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--txt-color-gray2);
+}
 /* SELL EASY*/
 
 .sell-easy {
-    padding: 7rem;
+    padding: 7rem 7rem 0;
     margin: -4rem auto 0rem;
 }
 
 
 
-.sell-easy__container {
+.sell-easy__container, .conditions__container{
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -345,10 +336,16 @@ p {
   text-align: left;
 }
 
-.sell-easy__item-title {
+.sell-easy__item-title, .advantages__item-title {
     margin-top: 0;
   font-size: 18px;
   margin-bottom: 4px;
+      font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--color-primary);
 }
 
 
@@ -364,9 +361,38 @@ p {
   height: auto;
 }
 
+/* CONDITIONS */
+.conditions {
+  padding: 2rem 0;
+  margin: -2rem auto 0rem;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center bottom; 
+}
+.conditions__title {
+  color: var(--white);
+}
+.conditions__container{
+  text-align: center;
+}
 
-
-
+.conditions__button {
+    text-decoration: none;
+    font-weight: 700;
+    padding: 0.70rem 1.5rem;
+    border-radius: 100px;
+    color: var(--white);
+    border: 2px solid #FFF;
+    margin: 2rem auto;
+    display: block;
+    width: max-content;
+}
+.conditions__subtitle {
+  color: var(--white);
+  max-width: 50rem;
+  display: block;
+  margin: 2rem auto;
+}
 
 @media (max-width: 1024px) {
   .advantages__grid {
