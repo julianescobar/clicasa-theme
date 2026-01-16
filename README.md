@@ -6,23 +6,23 @@ Incluye la maquetación completa de la **página de inicio (front page)** con es
 
 ## Estructura general
 
-
-├── acf-json/
-├── assets/
-│   ├── css/
-│   ├── fonts/
-│   ├── icons/
-│   ├── js/
-│   └── library/
-├── inc/
-├── template-parts/
-├── functions.php
-├── front-page.php
-├── header.php
-├── footer.php
-├── index.php
-└── style.css
-
+```txt
+├─ acf-json/
+├─ assets/
+│  ├─ css/
+│  ├─ fonts/
+│  ├─ icons/
+│  ├─ js/
+│  └─ library/
+├─ inc/
+├─ template-parts/
+├─ functions.php
+├─ front-page.php
+├─ header.php
+├─ footer.php
+├─ index.php
+└─ style.css
+```
 
 ## Notas rápidas
 
