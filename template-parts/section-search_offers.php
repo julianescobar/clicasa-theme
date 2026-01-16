@@ -8,7 +8,7 @@ $button_url  = get_field('search_offers_button_url');
 $background  = get_field('search_offers_background');
 
 
-if (!should_display_section($display)) {
+if (empty($display) || !is_string($display) || !should_display_section($display)) {
     return;
 }
 ?>
