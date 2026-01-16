@@ -8,16 +8,17 @@ $background = get_field('conditions_background');
 ?>
 
 <section 
+    id="conditions"
     class="conditions" 
     <?php if ($background): ?>style="background-image: url('<?php echo esc_url($background['url']); ?>');"<?php endif; ?>
 >
     <div class="conditions__container">
         <?php if ($title): ?>
-            <h2 class="conditions__title"><?php echo esc_html($title); ?></h2>
+            <h2 class="conditions__title ui-title"><?php echo esc_html($title); ?></h2>
         <?php endif; ?>
 
         <?php if ($subtitle): ?>
-            <p class="conditions__subtitle"><?php echo esc_html($subtitle); ?></p>
+            <p class="conditions__subtitle ui-animate"><?php echo esc_html($subtitle); ?></p>
         <?php endif; ?>
 
         <?php if ($button_text): ?>

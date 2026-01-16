@@ -8,20 +8,12 @@ $button_url  = get_field('search_offers_button_url');
 $background  = get_field('search_offers_background');
 
 
-$show_section = false;
-
-if ($display === 'both') {
-    $show_section = true;
-} elseif ($display === 'mobile' && wp_is_mobile()) {
-    $show_section = true;
-} elseif ($display === 'desktop' && !wp_is_mobile()) {
-    $show_section = true;
+if (!should_display_section($display)) {
+    return;
 }
-
-if ($show_section) :
 ?>
 <section 
-    class="search_offers"
+    class="search_offers" 
     <?php if ($background): ?>
         style="background-image: url('<?php echo esc_url($background['url']); ?>');"
     <?php endif; ?>
@@ -29,11 +21,11 @@ if ($show_section) :
     <div class="search_offers__container">
 
         <?php if ($title): ?>
-            <h2 class="search_offers__title"><?php echo esc_html($title); ?></h2>
+            <h2 class="search_offers__title ui-title"><?php echo esc_html($title); ?></h2>
         <?php endif; ?>
 
         <?php if ($subtitle): ?>
-            <p class="search_offers__subtitle"><?php echo esc_html($subtitle); ?></p>
+            <p class="search_offers__subtitle ui-animate"><?php echo esc_html($subtitle); ?></p>
         <?php endif; ?>
 
         <?php if ($button_text): ?>
@@ -47,4 +39,3 @@ if ($show_section) :
 
     </div>
 </section>
-<?php endif; ?>
