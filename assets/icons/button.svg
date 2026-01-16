@@ -1,0 +1,6 @@
+<svg width="40" height="40" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="60" cy="60" r="60" fill="#008bcf"/>
+  <!-- Triángulo más pegado a los bordes -->
+  <polygon points="42,32 42,88 102,60" fill="#ffffff"/>
+
+</svg>
